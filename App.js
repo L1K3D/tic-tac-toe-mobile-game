@@ -1,5 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { useState } from "react";
+import {
+  Alert,
+  Image,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+  ScrollView,
+  StyleSheet,
+} from "react-native";
+import styles from "./styles";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
   return (
