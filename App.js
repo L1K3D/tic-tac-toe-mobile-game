@@ -11,22 +11,18 @@ import {
   StyleSheet,
 } from "react-native";
 import styles from "./styles";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView contentContainerStyle={{ flexGrow: 1}}>
+      <View style={styles.container}>
+        
+        <View style={styles.board}>
+          <TouchableOpacity style={styles.cell}>
+            <Text></Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
