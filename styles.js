@@ -16,9 +16,9 @@ export default StyleSheet.create({
     width: 310,
     marginTop: 20,
   },
-  principalTitle: {
-    fontSize:
-  }
+  // principalTitle: {
+  //   fontSize:
+  // }
   cell: {
     width: 100,
     height: 100,

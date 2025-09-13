@@ -14,15 +14,15 @@ import styles from "./styles";
 
 export default function App() {
   return (
-    <ScrollView contentContainerStyle={{ flexGrow: 1}}>
-      <View style={styles.container}>
-        
-        <View style={styles.board}>
-          <TouchableOpacity style={styles.cell}>
-            <Text></Text>
-          </TouchableOpacity>
-        </View>
+    <View style={styles.container}>
+      <Text style={{fontSize: 32, fontWeight: "bold"}}>TicTacToe Game</Text>
+      <View styles={styles.board}>
+
       </View>
-    </ScrollView>
+      <TouchableOpacity style={{marginTop: 20, padding: 10, backgroundColor: "#333"}}>
+        <Text style={{color: "#fff"}}>Reset</Text>
+      </TouchableOpacity>
+      <StatusBar style="auto" />
+    </View>
   );
 }
